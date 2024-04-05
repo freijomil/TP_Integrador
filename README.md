@@ -1,4 +1,6 @@
 # TP_Integrador
 Repositorio del TP integrador de Progra 1
 
-Notas para ayudarnos y avisar de commits mas en especifico: oqifehohfwinfqi
+Programa integrador de programacion 1
+Equipo: Luciano Peirano, Maximo Freijomil, Gianfranco Rey
+Archivo de diseño:
