@@ -1,0 +1,30 @@
+*{box-sizing: border-box;}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.producto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    @media (min-width: 1024px) {
+         
+    }
+}
+  
+.link{ text-decoration: none;
+    color: black;}
+.imagenes{background-size: contain; }
