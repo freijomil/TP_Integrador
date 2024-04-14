@@ -18,10 +18,21 @@
   font-weight: 700;
   font-style: normal;
 }
-
+.clickeable {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
+}
 .link {
   text-decoration: none;
   color: black;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
 }
 .imagenes {
   background-size: contain;
@@ -46,12 +57,32 @@ header {
   text-align: center;
 }
 .producto_imagen {
-  width: 380px;
+  display: flex;
+justify-self: center;
+ width: 100vw;
+ height: 50vh;
+ @media (min-width: 1024px) {
+  width: 50vw;
+  height: 60vh;
+display: flex;
+justify-self: space-between;}
 }
 .producto_precio_agregar {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
+.producto_desktop{ @media (min-width: 1024px) {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+}}
 .logo {
   display: flex;
   justify-content: center;
@@ -60,18 +91,32 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+    
 }
 .ingresar {
   display: flex;
   justify-content: center;
   padding: 15px;
-}
-.body {
+  }
+.mail_password{ @media (min-width: 1024px){
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  }}
+.producto{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  @media (min-width: 1024px) {
+  font-size: larger;
+  }
 }
-
+.login{ font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  @media (min-width: 1024px){
+    font-size: larger;
+    }}
 .titulo_carrito {
   text-align: center;
   padding: 20px;
