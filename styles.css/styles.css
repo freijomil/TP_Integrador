@@ -83,6 +83,7 @@ flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-around;
 font-size: larger;
+padding: 5vh;
 }}
 .logo {
   display: flex;
@@ -92,17 +93,27 @@ font-size: larger;
   display: flex;
   justify-content: space-between;
   padding: 30px;
-    
+  @media (min-width: 1024px){
+    display: flex;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    justify-content: space-around;
+  } 
 }
 .ingresar {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+
   }
 .mail_password{ @media (min-width: 1024px){
   display: flex;
   justify-content: space-around;
   align-self: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
   }}
 .producto{
   font-family: "Roboto", sans-serif;
