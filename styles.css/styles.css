@@ -103,6 +103,20 @@ justify-content: space-around;
   justify-content: space-around;
   align-self: center;
   }}
+  .divreg{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  }
+  .mailreg{
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+   
+  }
+  
 .producto{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -156,4 +170,15 @@ input[type="submit"] {
 footer {
   text-align: center;
   
+}
+
+.fotos{
+text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.notpunto{
+  list-style-type: none ;
 }
