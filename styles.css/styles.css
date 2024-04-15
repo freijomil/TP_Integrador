@@ -70,11 +70,12 @@ justify-self: space-between;}
 .producto_precio_agregar {
   display: flex;
   justify-content: space-between;
-
+  
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
-    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 .producto_desktop{ @media (min-width: 1024px) {
