@@ -76,19 +76,38 @@ header {
 .h_link {
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  justify-self: center;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;}
+}
+.indice{ text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;}
 }
 
 /* PRODUCTO */
 
 .producto_titulo {
   text-align: center;
-  font-size: larger;
+  font-size: xx-large;
 }
 .producto_imagen {
   display: flex;
   justify-self: center;
   width: 100vw;
-  height: 50vh;
+  height: 30gotvh;
  @media (min-width: 1024px) {
   width: 50vw;
   height: 60vh;
@@ -98,7 +117,7 @@ header {
 .producto_precio_agregar {
   display: flex;
   justify-content: space-between;
-
+  font-size: medium;
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
@@ -117,6 +136,16 @@ padding: 5vh;
 .logo {
   display: flex;
   justify-content: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.iniSes{
+  display: flex;
+  justify-content: center;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* LOGIN */
