@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
+/* FONTS */
+
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -18,21 +21,43 @@
   font-weight: 700;
   font-style: normal;
 }
-.clickeable {
-  font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+.jersey-10 charted-regular {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: larger;
+}
+.press-start {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.black-ops one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+/* UNIVERSALES */
+.clickeable {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .link {
   text-decoration: none;
   color: black;
-  font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
   font-style: normal;
-  font-size: larger;
 }
 .imagenes {
   background-size: contain;
@@ -53,19 +78,22 @@ header {
   color: white;
 }
 
+/* PRODUCTO */
+
 .producto_titulo {
   text-align: center;
+  font-size: larger;
 }
 .producto_imagen {
   display: flex;
-justify-self: center;
- width: 100vw;
- height: 50vh;
+  justify-self: center;
+  width: 100vw;
+  height: 50vh;
  @media (min-width: 1024px) {
   width: 50vw;
   height: 60vh;
-display: flex;
-justify-self: space-between;}
+  display: flex;
+  justify-self: space-between;}
 }
 .producto_precio_agregar {
   display: flex;
@@ -74,7 +102,8 @@ justify-self: space-between;}
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
-    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 .producto_desktop{ @media (min-width: 1024px) {
@@ -82,26 +111,41 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-around;
+font-size: larger;
+padding: 5vh;
 }}
 .logo {
   display: flex;
   justify-content: center;
 }
+
+/* LOGIN */
+
 .divLogin {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-    
+  @media (min-width: 1024px){
+    display: flex;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    justify-content: space-around;
+  } 
 }
 .ingresar {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+
   }
 .mail_password{ @media (min-width: 1024px){
   display: flex;
   justify-content: space-around;
   align-self: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
   }}
   .divreg{
   display: flex;
@@ -118,9 +162,10 @@ justify-content: space-around;
   }
   
 .producto{
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
+  background-color: rgba(128, 128, 128, 0.25);
   @media (min-width: 1024px) {
   font-size: larger;
   }
@@ -131,6 +176,9 @@ justify-content: space-around;
   @media (min-width: 1024px){
     font-size: larger;
     }}
+
+/* CARRITO */
+
 .titulo_carrito {
   text-align: center;
   padding: 20px;
