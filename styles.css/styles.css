@@ -176,6 +176,20 @@ padding: 5vh;
   padding-left: 25vw;
   padding-right: 25vw;
   }}
+  .divreg{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  }
+  .mailreg{
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+   
+  }
+  
 .producto{
   font-family: "Courier Prime", monospace;
   font-weight: 400;
@@ -233,4 +247,15 @@ input[type="submit"] {
 footer {
   text-align: center;
   
+}
+
+.fotos{
+text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.notpunto{
+  list-style-type: none ;
 }
