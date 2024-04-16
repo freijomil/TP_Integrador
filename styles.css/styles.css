@@ -171,3 +171,15 @@ footer {
   text-align: center;
   
 }
+
+.flez {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cat {
+  list-style-type: none;
+}
+
