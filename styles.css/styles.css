@@ -274,16 +274,20 @@ footer {
 }
 
 .todohome{
- 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   
 
 }
-.producto{
+.productohome{
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 padding: 10px;
+flex-direction: row;
 }
 .producto img {
 width: 20%;
@@ -293,7 +297,7 @@ box-sizing: border-box;
 }
 .accesorios{
   flex-direction: row;
-  wi
+  
 
 }
 .tecnologia{
@@ -301,4 +305,47 @@ box-sizing: border-box;
   width: fit-content;
 
 
+}
+
+.registro{
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+
+.productos, .accesorios, .tecnologia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.productos a, .accesorios a, .tecnologia a {
+  width: 18%; 
+  margin: 10px;
+  text-align: center;
+}
+
+.img_producto {
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .productos a, .accesorios a, .tecnologia a {
+      width: 45%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .productos a, .accesorios a, .tecnologia a {
+      width: 90%; 
+  }
+}
+.principal{
+  text-align: center;
+  font-size: xx-large;
 }
