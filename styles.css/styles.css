@@ -289,7 +289,7 @@ footer {
 display: flex;
 justify-content: space-between;
 align-items: center;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 padding: 10px;
 flex-direction: row;
 }
@@ -320,8 +320,9 @@ box-sizing: border-box;
 */
 /*
 .productos, .accesorios, .tecnologia {
+  box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px;
 }
@@ -333,8 +334,8 @@ box-sizing: border-box;
 }
 
 .img_producto {
-  width: 100%;
-  height: auto;
+  width: 18vw;
+  height: 30vh;
   border: 0;
 }
 
