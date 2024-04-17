@@ -274,14 +274,14 @@ footer {
   object-fit: cover;
 }
 
-.producto{
+.productos{
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 padding: 10px;
 }
-.producto img {
+.producto_img {
 width: 20%;
 margin: 10px;
 box-sizing: border-box;
