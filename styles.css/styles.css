@@ -382,6 +382,7 @@ box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  justify-content: center;
 }
 
 .productos {
@@ -390,11 +391,12 @@ box-sizing: border-box;
   margin: 2%;
   box-shadow: black;
   padding: 4%;
+  box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
 }
 
 .img_producto {
-  max-width: 100%;
-  height: auto;
+  width: 25vw;
+  height: 30vh;
   display: block;
 }
 
