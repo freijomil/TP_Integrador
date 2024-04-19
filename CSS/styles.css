@@ -74,19 +74,20 @@ header {
   padding: 20px;
 }
 
+
+
 .h_link {
+  list-style-type: none;
   text-decoration: none;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 1vh;
-  justify-self: center;
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-  }
+  justify-content: space-between;
 }
+
 .indice {
+  list-style-type: none;
   text-decoration: none;
   color: white;
   display: flex;
@@ -95,12 +96,20 @@ header {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-  }
+  justify-content: space-between;
 }
 
+@media (min-width: 1024px) {
+  .h_link {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .indice {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 18px;
+  }
+}
 /* PRODUCTO */
 
 .producto_titulo {
@@ -205,12 +214,12 @@ header {
     font-size: larger;
   }
 }
-.login{ 
+.login {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 2vh;
-  @media (min-width: 1024px){
+  @media (min-width: 1024px) {
     font-size: larger;
   }
 }
@@ -235,6 +244,7 @@ header {
   margin: auto;
   padding: 20px;
   background-color: #fff;
+  border: black;
 }
 
 label {
@@ -265,7 +275,7 @@ footer {
   list-style-type: none;
   margin: 10px;
   text-align: center;
-  width: 240px; 
+  width: 240px;
 }
 
 .img_category {
@@ -362,20 +372,19 @@ box-sizing: border-box;
 
 }*/
 
-.registro{
+.registro {
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 3%;
 }
 
-.tituloscategoriashome{
+.tituloscategoriashome {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-
-  color:black;
+  color: black;
 }
 
 .accesorios {
@@ -385,7 +394,7 @@ box-sizing: border-box;
 }
 
 .productos {
-  width: 26%; 
+  width: 26%;
   text-align: center;
   margin: 2%;
   box-shadow: black;
@@ -398,16 +407,19 @@ box-sizing: border-box;
   display: block;
 }
 
-.detallehome, .agregarCarrito {
+.detallehome,
+.agregarCarrito {
   display: block;
   width: auto;
   padding: 1%;
-  margin:  5% auto;
+  margin: 5% auto;
   color: white;
   background-color: black;
   text-decoration: none;
   text-align: center;
-  
-  
+}
 
+hr {
+  background-color: black;
+  height: 10px;
 }
