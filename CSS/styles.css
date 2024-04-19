@@ -48,6 +48,10 @@
   background-color: rgba(128, 128, 128, 0.25);
 }
 /* UNIVERSALES */
+h1{font-size: xx-large;}
+h2{font-size: larger;}
+h3{font-size: large;}
+p{font-size: medium;}
 .clickeable {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -188,12 +192,15 @@ header {
 .mail_password {
   @media (min-width: 1024px) {
     display: flex;
-    justify-content: space-around;
-    align-self: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
     padding-left: 25vw;
     padding-right: 25vw;
   }
 }
+.pad{padding-bottom: 5vh;}
 .divreg {
   display: flex;
   flex-direction: column;
