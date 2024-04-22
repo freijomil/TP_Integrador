@@ -88,6 +88,7 @@ header {
   flex-direction: column;
   padding: 1vh;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .indice {
@@ -217,18 +218,13 @@ header {
   font-weight: 400;
   font-style: normal;
   background-color: rgba(128, 128, 128, 0.25);
-  @media (min-width: 1024px) {
-    font-size: larger;
-  }
+
 }
 .login {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 2vh;
-  @media (min-width: 1024px) {
-    font-size: larger;
-  }
 }
 
 /* CARRITO */
