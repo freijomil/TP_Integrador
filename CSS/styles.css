@@ -133,6 +133,9 @@ header {
     justify-self: space-between;
   }
 }
+.descripcion{
+  font-size: large;
+}
 .producto_precio_agregar {
   display: flex;
   justify-content: space-between;
@@ -308,14 +311,15 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   justify-content: center;
+  flex-direction: row;
 }
 
 .productos {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width:20vw; 
-  height:20vh;
+  width:10vw; 
+  height:10vh;
   text-align: center;
   margin: 2%;
   box-shadow: black;

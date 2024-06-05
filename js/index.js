@@ -1,35 +1,35 @@
-let url = 'https://fakestoreapi.com/products'
+let urlJoyas ='https://fakestoreapi.com/products/category/jewelery'
 
-fetch(url)
+fetch(urlJoyas)
     .then(function(res){
         return res.json()})
     .then(function(data){
         console.log("data del fetch",JSON.stringify(data,null,4 ))
        
-        let arrayDeProductos = data
+        let arrayDeJoyas = data
 
-        let arrayDeCategorias = data.category
+        //let arrayDeCategorias = data.category
 
         let producto = document.querySelector(".productos")
 
-        let todosProductos = []
+        let todosJoyas = []
 
-        let todasCategorias = []
+       // let todasCategorias = []
 
      //  for( let i= 0; i<arrayDeCategorias.length; i++){
           //todasCategorias += `<article class = "accesorios
            //                   </article>`
-           for(let i=0; i<arrayDeProductos.length; i++){
-            todosProductos += `<div class= "productos">
-                                <img src=${arrayDeProductos[i].image} class="img_producto" alt='${arrayDeProductos[i].title}' />
-                                <a href="detalle.html?id=${arrayDeProductos[i].id}" class="detallehome"> ${arrayDeProductos[i].title}</a>
-                                <p>Precio: ${arrayDeProductos[i].price}  </p>
-                                <p>Descripcion: ${arrayDeProductos[i].description}  </p> 
+           for(let i=0; i<arrayDeJoyas.length; i++){
+            todosJoyas += `<div class= "productos">
+                                <img src=${arrayDeJoyas[i].image} class="img_producto" alt='${arrayDeJoyas[i].title}' />
+                                <a href="producto.html?id=${arrayDeJoyas[i].id}" class="detallehome"> ${arrayDeJoyas[i].title}</a>
+                                <p>Precio: ${arrayDeJoyas[i].price}  </p>
+                                <p>Descripcion: ${arrayDeJoyas[i].description}  </p> 
                             </div>`
                             
         }
 
-        producto.innerHTML = todosProductos
+        producto.innerHTML = todosJoyas
         
     })
 
