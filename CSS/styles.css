@@ -214,11 +214,11 @@ header {
 }
 
 .producto {
+  display: flex;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
   background-color: rgba(128, 128, 128, 0.25);
-
 }
 .login {
   font-family: "Roboto", sans-serif;
@@ -311,8 +311,11 @@ footer {
 }
 
 .productos {
-  width: 50vw;
-  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:20vw; 
+  height:20vh;
   text-align: center;
   margin: 2%;
   box-shadow: black;
