@@ -115,6 +115,39 @@ header {
     padding-right: 18px;
   }
 }
+/* MEDIA QUERIE */
+
+@media (min-width: 1024px) {
+  .img_producto{width: 20vw;
+    height: 30vh;}
+  .for{width: 25vw;
+    height: 70vh;}
+  .mail_password{ display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+      padding-left: 25vw;
+      padding-right: 25vw;}
+  .divLogin{ display: flex;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    justify-content: space-around;}
+  .producto_desktop{display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: larger;
+    padding: 5vh;}
+  .producto_precio_agregar{display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;}
+  .producto_imagen{width: 50vw;
+    height: 60vh;
+    display: flex;
+    justify-self: space-between;}
+  }
 /* PRODUCTO */
 
 .producto_titulo {
@@ -126,12 +159,6 @@ header {
   justify-self: center;
   width: 100vw;
   height: 30gotvh;
-  @media (min-width: 1024px) {
-    width: 50vw;
-    height: 60vh;
-    display: flex;
-    justify-self: space-between;
-  }
 }
 .descripcion{
   font-size: large;
@@ -140,23 +167,10 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: medium;
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
 }
 .producto_desktop {
   box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    font-size: larger;
-    padding: 5vh;
-  }
+ 
 }
 .logo {
   display: flex;
@@ -179,12 +193,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  @media (min-width: 1024px) {
-    display: flex;
-    padding-left: 30vw;
-    padding-right: 30vw;
-    justify-content: space-around;
-  }
 }
 .ingresar {
   display: flex;
@@ -194,15 +202,7 @@ header {
   padding-right: 25vw;
 }
 .mail_password {
-  @media (min-width: 1024px) {
-    display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-    padding-left: 25vw;
-    padding-right: 25vw;
-  }
+  /* */
 }
 .pad{padding-bottom: 5vh;}
 .divreg {
@@ -314,32 +314,28 @@ footer {
   flex-direction: row;
 }
 
-.productos {
+.for {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width:10vw; 
   height:10vh;
   text-align: center;
-  margin: 2%;
   box-shadow: black;
-  padding: 4%;
   box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
-  @media (min-width: 1024px) {width: 25vw;
-  height: 70vh;}
 }
 
 .img_producto {
-  width: 45vw;
-  height: 25vh;
-  display: block;
-  @media (min-width: 1024px) {width: 20vw;
-  height: 30vh;}
+  width: 25vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .detallehome,
 .agregarCarrito {
-  display: block;
+  display: flex;
   width: auto;
   padding: 1%;
   margin: 5% auto;

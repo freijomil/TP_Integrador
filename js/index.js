@@ -10,9 +10,9 @@ fetch(urlJoyas)
 
         //let arrayDeCategorias = data.category
 
-        let producto = document.querySelector(".productos")
+        let producto = document.querySelector(".for")
 
-        let todosJoyas = []
+        let todosJoyas = ""
 
        // let todasCategorias = []
 
@@ -20,12 +20,12 @@ fetch(urlJoyas)
           //todasCategorias += `<article class = "accesorios
            //                   </article>`
            for(let i=0; i<arrayDeJoyas.length; i++){
-            todosJoyas += `<div class= "productos">
+            todosJoyas += `<article class= "for">
                                 <img src=${arrayDeJoyas[i].image} class="img_producto" alt='${arrayDeJoyas[i].title}' />
                                 <a href="producto.html?id=${arrayDeJoyas[i].id}" class="detallehome"> ${arrayDeJoyas[i].title}</a>
                                 <p>Precio: ${arrayDeJoyas[i].price}  </p>
                                 <p>Descripcion: ${arrayDeJoyas[i].description}  </p> 
-                            </div>`
+                            </article>`
                             
         }
 

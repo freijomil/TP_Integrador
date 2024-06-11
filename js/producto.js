@@ -23,5 +23,5 @@ fetch(url)
     productoTitulo.innerText += detallesProducto.title
     productoPrecioAgregar.innerText += detallesProducto.price
     descripcion.innerText += detallesProducto.description
-    productoImagen.innerText =  `<img src=${id.image} class="img_producto" alt='${id.title}` 
+    productoImagen.src =  detallesProducto.image
 })
