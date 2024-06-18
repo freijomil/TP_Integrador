@@ -23,8 +23,8 @@ fetch(urlJoyas)
             todosJoyas += `<article class= "for">
                                 <img src=${arrayDeJoyas[i].image} class="img_producto" alt='${arrayDeJoyas[i].title}' />
                                 <a href="producto.html?id=${arrayDeJoyas[i].id}" class="detallehome"> ${arrayDeJoyas[i].title}</a>
-                                <p>Precio: ${arrayDeJoyas[i].price}  </p>
-                                <p>Descripcion: ${arrayDeJoyas[i].description}  </p> 
+                                <p>Precio: ${arrayDeJoyas[i].price}</p>
+                                <p>Descripcion: ${arrayDeJoyas[i].description}</p> 
                             </article>`
                             
         }

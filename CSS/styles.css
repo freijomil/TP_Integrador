@@ -156,17 +156,27 @@ header {
 }
 .producto_imagen {
   display: flex;
-  justify-self: center;
-  width: 100vw;
-  height: 30gotvh;
+  justify-items: center;
+  
+  width: 50vw;
+  height: 50vh;
+  box-shadow: 5px 5px 5px 5px rgb(2, 2, 2)
 }
 .descripcion{
-  font-size: large;
+  font-size:x-large;
+  justify-self: center;
 }
-.producto_precio_agregar {
+.producto_precio{
   display: flex;
-  justify-content: space-between;
-  font-size: medium;
+  justify-content: space-around;
+  font-size: xx-large;
+  
+}
+.producto_precio_agregar{
+  display: flex;
+ 
+  font-size: xx-large;
+  
 }
 .producto_desktop {
   box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
@@ -218,6 +228,7 @@ header {
 
 .producto {
   display: flex;
+  flex-direction:column;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
@@ -321,14 +332,15 @@ footer {
   justify-content: center; 
   align-items: center;   
   box-shadow: 5px 5px 5px rgb(2, 2, 2);
+  width: 20vw;
 }
 
 .img_producto {
   width: 25vw;
   height: 20vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-self: center;
+  
 }
 
 .detallehome,
