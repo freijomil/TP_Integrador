@@ -91,6 +91,20 @@ header {
   flex-wrap: wrap;
 }
 
+.header{
+  
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-between;
+  
+}
 .indice {
   list-style-type: none;
   text-decoration: none;
@@ -211,9 +225,9 @@ header {
   padding-left: 25vw;
   padding-right: 25vw;
 }
-.mail_password {
+/*.mail_password {
   /* */
-}
+
 .pad{padding-bottom: 5vh;}
 .divreg {
   display: flex;
@@ -239,6 +253,10 @@ header {
   font-weight: 400;
   font-style: normal;
   padding: 2vh;
+
+}
+.form_login{
+  justify-self: center;
 }
 
 /* CARRITO */
@@ -320,39 +338,43 @@ footer {
 .accesorios {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .for {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; 
-  align-items: center;   
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;   
   box-shadow: 5px 5px 5px rgb(2, 2, 2);
   width: 20vw;
 }
+.for article {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
 
 .img_producto {
-  width: 25vw;
-  height: 20vh;
-  display: flex;
-  align-self: center;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
   
 }
 
 .detallehome,
 .agregarCarrito {
-  display: flex;
-  width: auto;
-  padding: 1%;
-  margin: 5% auto;
-  color: white;
-  background-color: black;
+  display: block;
+  margin-top: 10px;
   text-decoration: none;
-  text-align: center;
+  color: #333;
 }
 
 hr {
