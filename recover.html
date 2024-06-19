@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Press+Start+2P&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="./css/styles.css">
+<script src="js/recover.js"></script>
     <title>Recover</title>
 </head>
 
@@ -34,7 +34,11 @@
     <h3 class="logo">Recuperar Contraseña</h2>
     
         <form action="login.html" method="get">
-        <input type="email" name= "mail" value="" placeholder="Ingrese su e-mail">
+        <input type="email" name= "mail" value=""placeholder="Ingrese su e-mail">
+        <input type="checkbox" id="accept"> Quiero recuperar mi Contraseña
+        <button type="submit">Recuperar </button>
+        <p id = "recuperars" class ="recuperars"></p>
+      
     </form>
     <h4>Si este mail esta en registrado a nuestra pagina se enviara un email con las instrucciones para recuperar su Contraseña</h4>
     <a class="ingresar" href="login.html"><input type="submit" value="Enviar Mail">
