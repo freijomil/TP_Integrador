@@ -4,84 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Press+Start+2P&display=swap" rel="stylesheet">
- 
-<link rel="stylesheet" href="./css/styles.css">
-    <title>register </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="js/register.js" defer></script>
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Register</title>
 </head>
-
 <body class="font">
     <header class="indice">
         <nav class="h_link">
-          <ul class="indice">
-            <li><a class="indice h_link" href="./index.html">Home</a></li>
-            <li><a class="indice h_link"  href="./category.html">Hombres</a></li>
-            <li><a class="indice h_link"  href="./category.html">Mujeres</a></li>
-            <li><a class="indice h_link"  href="./category.html">Accesorios</a></li>
-            <li><a class="indice h_link"  href="./category.html">Electronica</a></li>
-            <li><a class="indice h_link"  href="./cart.html">Carrito</a></li>
-            <li><a class="indice h_link"  href="./login.html">Login</a></li>
-            <li><a class="indice h_link"  href="./register.html">Registro</a></li>
-         </ul>
+            <ul class="indice">
+                <li><a class="indice h_link" href="./index.html">Home</a></li>
+                <li><a class="indice h_link" href="./category.html">Hombres</a></li>
+                <li><a class="indice h_link" href="./category.html">Mujeres</a></li>
+                <li><a class="indice h_link" href="./category.html">Accesorios</a></li>
+                <li><a class="indice h_link" href="./category.html">Electronica</a></li>
+                <li><a class="indice h_link" href="./cart.html">Carrito</a></li>
+                <li><a class="indice h_link" href="./login.html">Login</a></li>
+                <li><a class="indice h_link" href="./register.html">Registro</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
     <h1 class="logo">TILLAS</h1>
     <article class="registro">
-    
-    <h3 class="logo">Registrarse</h2>
-    <form class="mailreg" action="login.html" method="get">
-        <!--input type="email" name= "mail" value="" placeholder="Ingrese su e-mail">
-        <input type="password" name="pass" value="" placeholder="crear contraseña">
-        <input type="password" name="pass" value="" placeholder="repetir  contraseña">
-        <input type="password" name="pass" value="" placeholder="agregar numero"  -->
-      <div>
-        <label for="DNI">DNI:</label>
-        <input type="text" name="user" >
-    </div>
-    <br>
-    <div>
-        <label for="email">E-mail:</label>
-        <input type="E-mail" name="E-mail">
-    </div>
-    <br>
-    <div>
-        <label for="date">Fecha de Nacimiento: </label>
-        <input type="date" name="Fecha de Nacimiento">
-
-    </div>
-    <br>
-    <div>
-<label for="password">Contraseña:</label>
-<input type="password" name="password">
-
-    </div>
-    <br>
-    <div>
-        <label for="password">Confirmar Contraseña:</label>
-        <input type="password">
-    </div>
-
-
-
-
-
-
-    </form>
-    <a class="ingresar" href="index.html"><input type="submit" value="Ingresar">
-    </a>
-    <div class="divreg">
-        <a href="./login.html"><input type="submit" value="Ya tienes cuenta"></a>
-        
-     </div>
+        <h3 class="logo">Registrarse</h3>
+        <form class="mailreg" action="login.html" method="get">
+            <div>
+                <label for="email">E-mail:</label>
+                <input class="Emailclass" type="email" id="E-mail" name="e-mail" value="">
+                <p class="checkemail"></p>
+            </div>
+            <br>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input class="passworldclass" type="password" id="pasword" name="contrasena" value="">
+                <p class="checkpassword"></p>
+            </div>
+            <br>
+            <div>
+                <label for="confirmarcontrasena">Confirmar Contraseña:</label>
+                <input class="confirmpassworldclass" type="password" id="confirmarcontrasena" name="confirmarcontrsena" value="">
+            </div>
+            <br>
+            <div>
+                <label for="terminosycondiciones">Acepto los términos y condiciones</label>
+                <input class="terminos_condicionesclass" type="checkbox" id="terminosycondiciones" name="terminos_condiciones" value="">
+            </div>
+            <br>
+            <div>
+                <button id="registrarme" type="submit">Registrarme</button>
+            </div>
+            <br>
+        </form>
+        <a class="ingresar" href="index.html"><input type="submit" value="Ingresar" id="ya tienes cuenta"></a>
+        <div class="divreg">
+            <a href="./login.html"><input type="submit" value="Ya tienes cuenta"></a>
+        </div>
     </article>
     <footer>
         <br>
-        &copy; Copyright <a href="#">Tillas</a> / Creada Por Luciano Peirano, Maximo Frijomil, Gianfranco Rey
-  </footer>
+        &copy; Copyright <a href="#">Tillas</a> / Creada por Luciano Peirano, Maximo Frijomil, Gianfranco Rey
+    </footer>
 </body>
-
 </html>
