@@ -2,9 +2,9 @@ let login = document.querySelector(".login")
 
 
 
-mensajeContra = "Por favor complete el campo contraseña"
-mensajeMail = "Por favor complete el campo mail"
-mensajeLong ="La contraseña debe tener al menos 6 caracteres"
+let mensajeContra = "Por favor complete el campo contraseña"
+let mensajeMail = "Por favor complete el campo mail"
+let mensajeLong ="La contraseña debe tener al menos 6 caracteres"
 let todoOk = true
 login.addEventListener("submit", function(e){
     e.preventDefault()

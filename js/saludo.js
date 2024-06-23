@@ -8,10 +8,10 @@ if (recuperoData) {
     
     let saludo = document.querySelector(".saludo");
     saludo.innerText += `Bienvenido ${nombre}!`
-    let login = document.querySelector(".login")
+    let login = document.querySelector(".log")
     let register = document.querySelector(".register")
     register.style.display = "none"
-   // login.style.display = "none"
+    login.style.display = "none"
 } else {
     let saludo =  document.querySelector(".saludo");
     saludo.innerText = 'Inicia sesion para guardar tus datos!';

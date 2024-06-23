@@ -46,6 +46,7 @@
   font-weight: 400;
   font-style: normal;
   background-color: rgba(128, 128, 128, 0.25);
+  text-align: center;
 }
 /* UNIVERSALES */
 h1{font-size: xx-large;}
@@ -215,19 +216,23 @@ header {
 
 .divLogin {
   display: flex;
-  justify-content: space-between;
-  padding: 10vw;
+  justify-content: space-around;
+  padding: 2vw;
 }
 .login {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50vw;
-
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .form_login{
   display: flex;
   justify-self: space-around;
+}
+.loginDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2vw;
 }
 /*.mail_password {
   /* */
@@ -263,7 +268,10 @@ header {
   justify-self: center;
   
 }
-
+#logout{
+  display: flex;
+  justify-self: center;
+}
 /* CARRITO */
 
 .titulo_carrito {
