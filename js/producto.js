@@ -25,3 +25,21 @@ fetch(url)
     descripcion.innerText += detallesProducto.description
     productoImagen.src =  detallesProducto.image
 })
+
+let agregarAlCarrito = document.querySelector(".agregar_al_carrito");
+        agregarAlCarrito.addEventListener("click", function() {
+            addToCart(detallesProducto);
+            alert("Producto agregado al carrito.");
+        });
+
+function addToCart(producto) {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    var productoEnCarrito = cart.find(function(item) {
+        return item.id === producto.id;
+    });
+    if (!productoEnCarrito) {
+        cart.push(producto);
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+}

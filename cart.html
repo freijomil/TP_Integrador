@@ -33,35 +33,17 @@
     <div class="titulo_carrito">
       <h1>Carrito de Compras</h1>
     </div>
-    <h2>Productos en el carrito</h2>
-    <img
-      class="imagen_carrito"
-      src="./img/blackfanton.webp"
-      alt="Imagen de las zapatillas"
-    />
-    <div class="formulario_carrito">
-      <label>¿Qué modelo deseas?</label>
-        <select name="modelo" id="modelo">
-            <option value="F">Femenino</option>
-            <option value="M">Masculino</option>
-        </select>
-
-        <label>¿Qué tamaño deseas?</label>
-        <select name="talle" id="talle">
-            <option value="12">12</option>
-            <option value="11">11</option>
-            <option value="10">10</option>
-            <option value="9">9</option>
-            <option value="8">8</option>
-        </select>
-      </select>
-      <h4>PRECIO: U$625</h4>
-      <a href="login.html"><input type="submit" value="Pagar" /></a>
+    <div class="productos_carrito">
+      <h2>Productos en el carrito</h2>
+      <div class="carrito-container">
+    </div>
+      <div id="carrito"></div>
+      <a id="finalizarCompra" href="./index.html" class="boton">Finalizar Compra</a>
     </div>
     <footer>
       <br>
       &copy; Copyright <a href="#">Tillas</a> / Creada Por Luciano Peirano, Maximo Frijomil, Gianfranco Rey
 </footer>
-  <script src="./js/cart.js"></script>
+<script src="./js/cart.js"></script>
 </body>
 </html>
