@@ -92,6 +92,20 @@ header {
   flex-wrap: wrap;
 }
 
+.header{
+  
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-between;
+  
+}
 .indice {
   list-style-type: none;
   text-decoration: none;
@@ -202,19 +216,27 @@ header {
 
 .divLogin {
   display: flex;
-  justify-content: space-between;
-  padding: 30px;
+  justify-content: space-around;
+  padding: 2vw;
 }
-.ingresar {
+.login {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.form_login{
+  display: flex;
+  justify-self: space-around;
+}
+.loginDiv {
   display: flex;
   justify-content: center;
-  padding: 10vh;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  flex-wrap: wrap;
+  padding: 2vw;
 }
-.mail_password {
+/*.mail_password {
   /* */
-}
+
 .pad{padding-bottom: 5vh;}
 .divreg {
   display: flex;
@@ -240,8 +262,16 @@ header {
   font-weight: 400;
   font-style: normal;
   padding: 2vh;
-}
 
+}
+.form_login{
+  justify-self: center;
+  
+}
+#logout{
+  display: flex;
+  justify-self: center;
+}
 /* CARRITO */
 
 .titulo_carrito {
@@ -321,58 +351,33 @@ footer {
 .accesorios {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .for, .if {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 15px;
-  text-align: center;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;   
+  box-shadow: 5px 5px 5px rgb(2, 2, 2);
+  width: 20vw;
 }
-
-
-.for .detallehome, .if .detallehome {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.for p, .if p {
-  margin-top: 8px;
-  font-size: 0.9em;
-  color: #666666;
-}
-
-
 
 .img_producto {
-  width: 25vw;
-  height: 20vh;
-  display: flex;
-  align-self: center;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
   
 }
 
 .detallehome,
 .agregarCarrito {
-  display: flex;
-  width: auto;
-  padding: 1%;
-  margin: 5% auto;
-  color: white;
-  background-color: black;
+  display: block;
+  margin-top: 10px;
   text-decoration: none;
-  text-align: center;
+  color: #333;
 }
 
 hr {
