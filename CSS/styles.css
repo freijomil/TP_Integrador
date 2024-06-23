@@ -216,14 +216,18 @@ header {
 .divLogin {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10vw;
 }
-.ingresar {
+.login {
   display: flex;
-  justify-content: center;
-  padding: 10vh;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50vw;
+
+}
+.form_login{
+  display: flex;
+  justify-self: space-around;
 }
 /*.mail_password {
   /* */
@@ -257,6 +261,7 @@ header {
 }
 .form_login{
   justify-self: center;
+  
 }
 
 /* CARRITO */
