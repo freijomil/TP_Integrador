@@ -27,21 +27,21 @@ function mostrarCarrito(cartItems, contenedor) {
                 if (!res.ok) {
                     throw new Error('Network response was not ok ' + res.statusText);
                 }
-                return res.text();  // get response as text
+                return res.text();  
             })
             .then(function(text) {
                 console.log(`Response for product ${id}:`, text);
                 if (text) {
-                    return JSON.parse(text); // parse the text only if it's not empty
+                    return JSON.parse(text); 
                 } else {
                     throw new Error('Response was empty');
                 }
             })
             .then(function(product) {
                 contenidoHTML += `
-                    <div class="producto">
+                    <div class="productoa">
                         <div class="foto-producto">
-                            <img src="${product.image}" alt="${product.title}">
+                            <img src="${product.image}" class="imgcarrito" alt="${product.title}">
                         </div>
                         <div class="detalle">
                             <p>Nombre: ${product.title}</p>

@@ -53,7 +53,6 @@ fetch(urlJoyas)
                                 <a href="producto.html?id=${arrayDeTech[i].id}" class="detallehome"> ${arrayDeTech[i].title}</a>
                                 <p>Precio: ${arrayDeTech[i].price}</p>
                                 <p>Descripcion: ${arrayDeTech[i].description}</p> 
-                                <button id="ver_mas">Ver mas</button>
                             </article>`
                             
         }
