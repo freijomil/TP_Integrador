@@ -26,7 +26,7 @@ for (let i = 0; i < categories.length; i++) {
                     let categoriesHTML = '';
 
                     for (let j = 0; j < data.length; j++) {
-                        categoriesHTML += `<section class="Categoria">
+                        categoriesHTML += `<section class="categoria">
                         <a href="producto.html?id=${data[j].id}" class="detallehome logo">${data[j].title}</a>
                             <img src="${data[j].image}" class="cat" alt="${data[j].title}" />
                             <p>Precio: ${data[j].price}</p>
