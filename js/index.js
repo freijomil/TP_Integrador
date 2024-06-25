@@ -41,17 +41,12 @@ fetch(urlJoyas)
        
         let arrayDeTech = data
 
-        //let arrayDeCategorias = data.category
 
         let producto = document.querySelector(".if")
 
         let todosTech = ""
 
-       // let todasCategorias = []
-
-     //  for( let i= 0; i<arrayDeCategorias.length; i++){
-          //todasCategorias += `<article class = "accesorios
-           //                   </article>`
+      
            for(let i=0; i<arrayDeTech.length; i++){
             todosTech += `<article class= "if">
                                 <img src=${arrayDeTech[i].image} class="img_producto" alt='${arrayDeTech[i].title}' />
@@ -71,7 +66,7 @@ fetch(urlJoyas)
         console.log(e)
      })
     
-     let urlmujeres ='https://fakestoreapi.com/products/category/mujeres'
+     let urlmujeres ="https://fakestoreapi.com/products/category/women's clothing"
 
     fetch(urlmujeres)
         .then(function(res){
@@ -79,30 +74,25 @@ fetch(urlJoyas)
         .then(function(data){
         console.log("data del fetch",JSON.stringify(data,null,4 ))
        
-        let arrayDeTech = data
+        let arrayDeMujeres = data
 
-        //let arrayDeCategorias = data.category
 
         let producto = document.querySelector(".while")
 
-        let todosmujeres = ""
+        let todosMujeres = ""
 
-       // let todasCategorias = []
 
-     //  for( let i= 0; i<arrayDeCategorias.length; i++){
-          //todasCategorias += `<article class = "accesorios
-           //                   </article>`
-           for(let i=0; i<arrayDemujeres.length; i++){
-            todosmujeres += `<article class= ".while">
-                                <img src=${arrayDemujeres[i].image} class="img_producto" alt='${arrayDemujeres[i].title}' />
-                                <a href="producto.html?id=${arrayDemujeres[i].id}" class="detallehome"> ${arrayDemujeres[i].title}</a>
-                                <p>Precio: ${arrayDemujeres[i].price}</p>
-                                <p>Descripcion: ${arrayDemujeres[i].description}</p> 
+           for(let i=0; i<arrayDeMujeres.length; i++){
+            todosMujeres += `<article class= "while">
+                                <img src=${arrayDeMujeres[i].image} class="img_producto" alt='${arrayDeMujeres[i].title}' />
+                                <a href="producto.html?id=${arrayDeMujeres[i].id}" class="detallehome"> ${arrayDeMujeres[i].title}</a>
+                                <p>Precio: ${arrayDeMujeres[i].price}</p>
+                                <p>Descripcion: ${arrayDeMujeres[i].description}</p> 
                             </article>`
                             
         }
 
-        producto.innerHTML = todosmujeres
+        producto.innerHTML = todosMujeres
         
     })
 
@@ -110,3 +100,4 @@ fetch(urlJoyas)
         console.log(e)
 
     })
+
