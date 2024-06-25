@@ -360,21 +360,19 @@ footer {
   flex-direction: column;
 }
 
-.for, .if {
+.for,
+.if {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; 
-  align-items: center;   
+  justify-content: center;
+  align-items: center;
   box-shadow: 5px 5px 5px rgb(2, 2, 2);
-  width: 20vw;
 }
 
 .img_producto {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  
 }
 
 .detallehome,
