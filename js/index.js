@@ -76,3 +76,42 @@ fetch(urlJoyas)
         console.log(e)
      })
     
+     let urlmujeres ='https://fakestoreapi.com/products/category/mujeres'
+
+    fetch(urlmujeres)
+        .then(function(res){
+         return res.json()})
+        .then(function(data){
+        console.log("data del fetch",JSON.stringify(data,null,4 ))
+       
+        let arrayDeTech = data
+
+        //let arrayDeCategorias = data.category
+
+        let producto = document.querySelector(".while")
+
+        let todosmujeres = ""
+
+       // let todasCategorias = []
+
+     //  for( let i= 0; i<arrayDeCategorias.length; i++){
+          //todasCategorias += `<article class = "accesorios
+           //                   </article>`
+           for(let i=0; i<arrayDemujeres.length; i++){
+            todosmujeres += `<article class= ".while">
+                                <img src=${arrayDemujeres[i].image} class="img_producto" alt='${arrayDemujeres[i].title}' />
+                                <a href="producto.html?id=${arrayDemujeres[i].id}" class="detallehome"> ${arrayDemujeres[i].title}</a>
+                                <p>Precio: ${arrayDemujeres[i].price}</p>
+                                <p>Descripcion: ${arrayDemujeres[i].description}</p> 
+                            </article>`
+                            
+        }
+
+        producto.innerHTML = todosmujeres
+        
+    })
+
+    .catch( function(e){
+        console.log(e)
+
+    })
