@@ -410,7 +410,39 @@ hr {
 
 .cat {
   max-width: fit-content;
+  max-height: fit-content;
+  width: 20rem;
   height: 30%;
   display: block;
-  margin: 10px 0;
+  align-items: center;  
+  margin-left: 34%;
+}
+
+.foto-producto {
+ max-width: fit-content;
+ max-height: 50%;
+ width: 30%;
+ height: 25%;
+
+}
+.productoa {
+  max-width: fit-content;
+  display: block;
+  max-height: fit-content;
+  margin-left: 20rem;
+  background-color: rgba(128, 128, 128, 0.25);
+  display: flex;
+  flex-direction:column;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.imgcarrito {
+  max-width: fit-content;
+  max-height: fit-content;
+  width: 16rem;
+  height: 16rem;
+  margin-left: 13rem;
 }
