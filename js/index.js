@@ -8,17 +8,11 @@ fetch(urlJoyas)
        
         let arrayDeJoyas = data
 
-        //let arrayDeCategorias = data.category
 
         let producto = document.querySelector(".for")
 
         let todosJoyas = ""
 
-       // let todasCategorias = []
-
-     //  for( let i= 0; i<arrayDeCategorias.length; i++){
-          //todasCategorias += `<article class = "accesorios
-           //                   </article>`
            for(let i=0; i<arrayDeJoyas.length; i++){
             todosJoyas += `<article class= "for">
                                 <img src=${arrayDeJoyas[i].image} class="img_producto" alt='${arrayDeJoyas[i].title}' />
@@ -64,6 +58,7 @@ fetch(urlJoyas)
                                 <a href="producto.html?id=${arrayDeTech[i].id}" class="detallehome"> ${arrayDeTech[i].title}</a>
                                 <p>Precio: ${arrayDeTech[i].price}</p>
                                 <p>Descripcion: ${arrayDeTech[i].description}</p> 
+                                <button id="ver_mas">Ver mas</button>
                             </article>`
                             
         }
@@ -75,3 +70,43 @@ fetch(urlJoyas)
     .catch( function(e){
         console.log(e)
      })
+    
+     let urlmujeres ='https://fakestoreapi.com/products/category/mujeres'
+
+    fetch(urlmujeres)
+        .then(function(res){
+         return res.json()})
+        .then(function(data){
+        console.log("data del fetch",JSON.stringify(data,null,4 ))
+       
+        let arrayDeTech = data
+
+        //let arrayDeCategorias = data.category
+
+        let producto = document.querySelector(".while")
+
+        let todosmujeres = ""
+
+       // let todasCategorias = []
+
+     //  for( let i= 0; i<arrayDeCategorias.length; i++){
+          //todasCategorias += `<article class = "accesorios
+           //                   </article>`
+           for(let i=0; i<arrayDemujeres.length; i++){
+            todosmujeres += `<article class= ".while">
+                                <img src=${arrayDemujeres[i].image} class="img_producto" alt='${arrayDemujeres[i].title}' />
+                                <a href="producto.html?id=${arrayDemujeres[i].id}" class="detallehome"> ${arrayDemujeres[i].title}</a>
+                                <p>Precio: ${arrayDemujeres[i].price}</p>
+                                <p>Descripcion: ${arrayDemujeres[i].description}</p> 
+                            </article>`
+                            
+        }
+
+        producto.innerHTML = todosmujeres
+        
+    })
+
+    .catch( function(e){
+        console.log(e)
+
+    })

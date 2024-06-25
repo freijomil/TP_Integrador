@@ -21,9 +21,9 @@ fetch(url)
         let descripcion = document.querySelector(".descripcion");
         let productoImagen = document.querySelector(".producto_imagen");
 
-        productoTitulo.innerText = detallesProducto.title;
-        productoPrecioAgregar.innerText = detallesProducto.price;
-        descripcion.innerText = detallesProducto.description;
+        productoTitulo.innerText += detallesProducto.title;
+        productoPrecioAgregar.innerText += detallesProducto.price;
+        descripcion.innerText += detallesProducto.description;
         productoImagen.src = detallesProducto.image;
 
         let agregarAlCarrito = document.querySelector(".agregar_al_carrito");

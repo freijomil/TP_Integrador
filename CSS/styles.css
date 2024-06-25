@@ -173,8 +173,8 @@ header {
   display: flex;
   justify-items: center;
   
-  width: 50vw;
-  height: 50vh;
+  width: 35vw;
+  height: 60vh;
   box-shadow: 5px 5px 5px 5px rgb(2, 2, 2)
 }
 .descripcion{
@@ -196,6 +196,11 @@ header {
 .producto_desktop {
   box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
  
+}
+.agregar_al_carrito{
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
 }
 .logo {
   display: flex;
